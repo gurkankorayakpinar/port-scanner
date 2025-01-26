@@ -1,13 +1,13 @@
 import psutil
 
 def get_open_ports():
-    open_ports = set()  # Tekrarlanan portları önlemek için set
+    open_ports = set()  # Tekrarlanan çıktıları engellemek için "set" yapısı kullanıldı.
     try:
-        # Tüm ağ bağlantılarını al
+        # Tüm ağ bağlantılarını al.
         for conn in psutil.net_connections(kind='inet'):
-            # Yalnızca 'LISTEN' durumundaki bağlantıları al
-            if conn.status == psutil.CONN_LISTEN:  # 'LISTEN' sabitini kullanmak daha güvenli
-                open_ports.add(conn.laddr.port)  # Port'u sete ekle
+            # Yalnızca 'LISTEN' durumundaki bağlantıları al.
+            if conn.status == psutil.CONN_LISTEN:
+                open_ports.add(conn.laddr.port)  # Set'e ekle.
     except psutil.AccessDenied:
         print("Erişim engellendi! Yönetici yetkileri gerekli olabilir.")
     except Exception as e:
@@ -19,7 +19,7 @@ if __name__ == "__main__":
     ports = get_open_ports()
     if ports:
         print("Açık Portlar:")
-        for port in sorted(ports):  # Portları sıralı şekilde yazdır
+        for port in sorted(ports):  # Port numaralarını küçükten büyüğe doğru yansıt.
             print(port)
     else:
         print("Açık port bulunamadı.")
