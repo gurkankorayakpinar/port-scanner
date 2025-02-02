@@ -4,6 +4,6 @@
 
 ***
 
-- Port tarama işlemi için "psutil" modülü kullanılmıştır.
+- Port tarama işlemi için `psutil` modülü kullanılmıştır.
 
 - Port numaralarının sadece birer defa yansıtılması için "set" yapısı kullanılmıştır.
