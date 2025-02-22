@@ -18,7 +18,7 @@ def get_open_ports():
 if __name__ == "__main__":
     ports = get_open_ports()
     if ports:
-        print("Açık Portlar:")
+        print("Açık portlar:")
         for port in sorted(ports):  # Port numaralarını küçükten büyüğe doğru yansıt.
             print(port)
     else:
