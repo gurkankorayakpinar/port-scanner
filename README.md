@@ -6,4 +6,4 @@
 
 - Port tarama işlemi için `psutil` modülü kullanılmıştır.
 
-- Port numaralarının sadece birer defa yansıtılması için "set" yapısı kullanılmıştır.
+- Sonuç listesinde tekrarların engellenmesi için "set" yapısı kullanılmıştır.
