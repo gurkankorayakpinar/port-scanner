@@ -1,6 +1,6 @@
 # Port scanner
 
-- Bu projede, sistemde açık olan port'ların listelenmesi sağlanmaktadır.
+- Bu proje, bir port tarama uygulamasıdır.
 
 ***
 
